@@ -5,7 +5,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const LINE =
-  "My agent calls three tools, reads none of the results, then announces the fix with the confidence of a man who has never met a bug.";
+  "My agent calls nine tools, reads none, declares the bug fixed. I ask which one fixed it. 'All nine,' it says. 'Probably.'";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", LINE, "utf8");
